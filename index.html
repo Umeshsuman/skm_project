@@ -6,128 +6,384 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKM</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/> -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <section class="navigation">
-        <div class="nav-container container">
-          <div class="brand">
-            <a href="#!">Logo</a>
-          </div>
-          <nav>
-            <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
-            <ul class="nav-list">
-              <li>
-                <a href="#!">Courses & Fee</a>
-                <ul class="navbar-dropdown">
-                    <li><a href="#!"><strong>Commerce</strong></a></li>
-                    <li><a href="#!"><strong>JEE (Main + Advanced) IIT-JEE</strong></a></li>
-                    <li><a href="#!"><strong>JEE (Main)</strong></a></li>
-                    <li><a href="#!"><strong>Pre-Medical (NEET-UG)</strong></a></li>
-                    <li><a href="#!"><strong>Pre-Nurture &amp; Career Foundation</strong></a></li>
-                </ul>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses & Fee
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Commerce</a></li>
+              <li><a class="dropdown-item" href="#">JEE (Main + Advanced) IIT-JEE</a></li>
+              <li><a class="dropdown-item" href="#">JEE (Main)</a></li>
+              <li><a class="dropdown-item" href="#">Pre-Medical (NEET-UG)</a></li>
+              <li><a class="dropdown-item" href="#">Pre-Nurture & Career Foundation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#"> Distance Learning </a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#"> Online Test Series </a>
+          </li>
+          <li class="nav-item ms-2 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admission
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">How to apply for APPLICATION FORM</a></li>
+              <li><a class="dropdown-item" href="#">Apply Online</a></li>
+              <li><a class="dropdown-item" href="#">Scholarship Admission Test (SAT)</a></li>
+              <li><a class="dropdown-item" href="#">Fee Deposition Modes</a></li>
+              <li><a class="dropdown-item" href="#">Scholarship Rules</a></li>
+              <li><a class="dropdown-item" href="#">Refund Rules</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#"> Deposit </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section slider -->
+  <section class="slider-sec container-fluid px-0">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://placehold.jp/1160x300.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://placehold.jp/1160x300.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://placehold.jp/1160x300.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Section 1 -->
+  <section class="section1 container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="sec1-card">
+          <h5>Notification</h5>
+          <div class="sec2-data">
+            <ul>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
               </li>
-              <li>
-                <a href="#!"> Distance Learning </a>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
               </li>
-              <li>
-                <a href="#!"> Online Test Series </a>
-                <!-- <ul class="navbar-dropdown">
-                  <li>
-                    <a href="#!">Sass</a>
-                  </li>
-                  <li>
-                    <a href="#!">Less</a>
-                  </li>
-                  <li>
-                    <a href="#!">Stylus</a>
-                  </li>
-                </ul> -->
-              </li>
-              <li>
-                <a href="#!"> ADMISSION </a>
-                <ul class="navbar-dropdown">
-                    <li> <a href="#!">How to apply for APPLICATION FORM</a></li>
-                    <li> <a href="#!">Apply Online</a></li>
-                    <li> <a href="#!">Scholarship Admission Test (SAT)</a></li>
-                    <li> <a href="#!">Fee Deposition Modes</a></li>
-                    <li> <a href="#!">Scholarship Rules</a></li>
-                    <li> <a href="#!">Refund Rules</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#!"> Fee Deposit </a>
-              </li>
-              <li>
-                <a href="#!">Contact</a>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
               </li>
             </ul>
-          </nav>
-        </div>
-      </section>
-
-      <!-- Section slider -->
-      <section class="slider-sec container-fluid px-0">
-        <div id="owl-demo" class="owl-carousel owl-theme">
-            <div class="item"><img src="https://placehold.jp/1160x300.png" alt="The Last of us"></div>
-            <div class="item"><img src="https://placehold.jp/1160x300.png" alt="GTA V"></div>
-            <div class="item"><img src="https://placehold.jp/1160x300.png" alt="Mirror Edge"></div>
           </div>
-      </section>
-      <!-- Section 1 -->
-      <section class="container section1">
-        <div class="row">
-            <div class="col-sm-12 col-lg-3 col-md-6  col-xs-12" onclick="location.href='/';" style="cursor: pointer;">
-                <div class="course-cards">
-                    <div class="card-img"><img class="img-fluid" src="https://placehold.jp/140x90.png" alt=""></div>
-                    <div class="right-section">
-                        <h3 class="https://placehold.jp/140x90.pngtext-uppercase">JEE (Main+Advanced) IIT-JEE</h3>
-                        <p>ALLEN is equipped with the team of top most faculties for preparation of JEE (Main+Advanced)...</p>
-                        <div class="card-btn"><a class="text-uppercase" href="/">View Courses</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-3 col-md-6  col-xs-12" onclick="location.href='/';" style="cursor: pointer; text-align: center;">
-                <div class="course-cards">
-                    <div class="card-img"><img class="img-fluid" src="https://placehold.jp/140x90.png" alt=""></div>
-                    <div class="right-section">
-                        <h3 class="https://placehold.jp/140x90.pngtext-uppercase">Pre-Medical NEET UG</h3>
-                        <p>ALLEN has long been distinguished for the best preparatory courses and results for medical entrance examinations... </p>
-                        <div class="card-btn"><a class="text-uppercase" href="">View Courses</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-3 col-md-6  col-xs-12" onclick="location.href='/';" style="cursor: pointer;">
-                <div class="course-cards">
-                    <div class="card-img"><img class="img-fluid" src="https://placehold.jp/140x90.png" alt=""></div>
-                    <div class="right-section">
-                        <h3 class="https://placehold.jp/140x90.pngtext-uppercase">JEE (Main)</h3>
-                        <p>JEE (Main) courses designed by ALLEN are unique and are as per the latest examination pattern...</p>
-                        <div class="card-btn"><a class="text-uppercase" href="/">View Courses</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-12 col-lg-3 col-md-6  col-xs-12" onclick="window.open('/','mywindow');" style="cursor: pointer;">
-                <div class="course-cards">
-                    <div class="card-img"><img class="img-fluid" src="https://placehold.jp/140x90.png" alt=""></div>
-                    <div class="right-section">
-                        <h3 class="https://placehold.jp/140x90.pngtext-uppercase">Pre-Nurture Career Foundation ( 6<sup>th</sup> to 10<sup>th</sup> )</h3>
-                        <p>Offers courses for various Competitive Exams and Olympiads for the students.</p>
-                        <div class="card-btn"><a class="text-uppercase" href="/" target="_blank">View Courses</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-      </section>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="sec1-card">
+          <h5>New Courses</h5>
+          <div class="sec2-data">
+            <ul>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
+              </li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
+              </li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="sec1-card">
+          <h5>Results <img src="assets/img/new_icon_blink.gif" alt=""></h5>
+          <div class="sec2-data">
+            <ul>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" <img
+                    src="assets/img/new_icon_blink.gif" alt=""> </a></li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
+              </li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
+              </li>
+              <li><a href=""> Important Session for NEET Aspirants by BM Sir on "How to get Govt. Medical Seat?" </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="container section2">
+    <h2>Courses & Fee</h2>
+    <div class="row">
+      <div class="col-sm-12 col-lg-3 col-md-6  col-xs-12" onclick="location.href='/';" style="cursor: pointer;">
+        <div class="course-cards">
+          <div class="card-img"><img class="img-fluid" src="https://placehold.jp/140x90.png" alt=""></div>
+          <div class="right-section">
+            <h3 class="https://placehold.jp/140x90.pngtext-uppercase">JEE (Main+Advanced) IIT-JEE</h3>
+            <p>ALLEN is equipped with the team of top most faculties for preparation of JEE (Main+Advanced)...</p>
+            <div class="card-btn"><a class="text-uppercase" href="/">View Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6  col-xs-12" onclick="location.href='/';"
+        style="cursor: pointer; text-align: center;">
+        <div class="course-cards">
+          <div class="card-img"><img class="img-fluid" src="https://placehold.jp/140x90.png" alt=""></div>
+          <div class="right-section">
+            <h3 class="https://placehold.jp/140x90.pngtext-uppercase">Pre-Medical NEET UG</h3>
+            <p>ALLEN has long been distinguished for the best preparatory courses and results for medical entrance
+              examinations... </p>
+            <div class="card-btn"><a class="text-uppercase" href="">View Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6  col-xs-12" onclick="location.href='/';" style="cursor: pointer;">
+        <div class="course-cards">
+          <div class="card-img"><img class="img-fluid" src="https://placehold.jp/140x90.png" alt=""></div>
+          <div class="right-section">
+            <h3 class="https://placehold.jp/140x90.pngtext-uppercase">JEE (Main)</h3>
+            <p>JEE (Main) courses designed by ALLEN are unique and are as per the latest examination pattern...</p>
+            <div class="card-btn"><a class="text-uppercase" href="/">View Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-3 col-md-6  col-xs-12" onclick="window.open('/','mywindow');"
+        style="cursor: pointer;">
+        <div class="course-cards">
+          <div class="card-img"><img class="img-fluid" src="https://placehold.jp/140x90.png" alt=""></div>
+          <div class="right-section">
+            <h3 class="https://placehold.jp/140x90.pngtext-uppercase">Pre-Nurture Career Foundation ( 6<sup>th</sup> to
+              10<sup>th</sup> )</h3>
+            <p>Offers courses for various Competitive Exams and Olympiads for the students.</p>
+            <div class="card-btn"><a class="text-uppercase" href="/" target="_blank">View Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="section3 container">
+    <div class="sec3-card">
+      <h3 class="text-start">Global Studies Programme</h3>
+      <div class="col-md-8 col-sm-12 col-12">
+        <p>ALLEN Global Studies Division (AGSD) is a gateway to International Education with offerings like
+          SAT/ACT/TOEFL/IELTS/AP Tests preparation. We provide classroom as well as online learning with the best study
+          material for standardized tests like SAT, ACT, TOEFL, and IELTS.</p>
+        <button>View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="section4 container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-12 sec4-col1">
+        <h2>Know about <span>Company</span></h2>
+        <p>A Premier Coaching Institute for the preparation of JEE (Main+Advanced), JEE (Main), Pre-Medical (NEET-UG),
+          Pre-Nurture &amp; Career Foundation (Class VI to X, NTSE &amp; Olympiads) and Commerce Education (11th, 12th,
+          CA &amp; CS). The Institute is well
+          regarded for the high quality entrance exam preparation and produces best results year after year. At ALLEN ,
+          We focus on building a strong foundation of knowledge and concepts in students for their success and provide
+          an excellent platform
+          for the preparation of competitive exams and board level education. The best academic support and personal
+          care which we provide to the students, helps them meet their career goals and objectives. The core values of
+          Determination, Honesty,
+          Authenticity, Integrity, Devotion, Humanism, Holistic Learning, Social Ethics, and concern for society &amp;
+          environment are all closely interwoven into the fiber of our academic programs. Our highly qualified and most
+          experienced faculties
+          are dedicated and committed to student’s complete success and provide assistive surroundings to contribute to
+          their social, cultural, academic and all-round development.</p>
+        <p>To our students, we impart value-based career education, abundant resources, and individual attention. To the
+          parents, we have a responsibility to nurture ethical and responsible career leadership in the children. To the
+          society, we provide
+          a lifelong connection to ethics and excellence in global leaders.</p>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <div class="sec4-card">
+              <div class="icon text-center">
+                <img src="https://placehold.jp/64x64.png" alt="">
+              </div>
+              <h3>27 Lac+</h3>
+              <p>Trusted Chosen in all modes by Students across</p>
+              <p>(Since 1988)</p>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="sec4-card">
+              <div class="icon text-center">
+                <img src="https://placehold.jp/64x64.png" alt="">
+              </div>
+              <h3>2.8 Lac+</h3>
+              <p>Students studying online & classroom courses</p>
+              <p>(2022-2023)</p>
+            </div>
+          </div>
+          <div class="col-4 mb-3">
+            <div class="sec4-card">
+              <div class="icon text-center">
+                <img src="https://placehold.jp/64x64.png" alt="">
+              </div>
+              <h3>48</h3>
+              <p>Study Centers</p>
+            </div>
+          </div>
+          <div class="col-4 mb-3">
+            <div class="sec4-card">
+              <div class="icon text-center">
+                <img src="https://placehold.jp/64x64.png" alt="">
+              </div>
+              <h3>170+</h3>
+              <p>Classroom Campus</p>
+            </div>
+          </div>
+          <div class="col-4 mb-3">
+            <div class="sec4-card">
+              <div class="icon text-center">
+                <img src="https://placehold.jp/64x64.png" alt="">
+              </div>
+              <h3>200+</h3>
+              <p>Test Center</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section class="section5 container-fluid">
+    <h2 class="text-center">Events at company</h2>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+      <div class="item">
+        <img src="https://placehold.jp/1400x787.png" alt="">
+      </div>
+    </div>
+  </section>
 
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
