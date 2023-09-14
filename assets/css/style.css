@@ -404,6 +404,9 @@ select:focus {
         height: auto;
         margin-bottom: 1rem;
     }
+    .sec4-card {
+      padding: 0.5rem;
+    }
     .footer-section{
       text-align: center;
     }
